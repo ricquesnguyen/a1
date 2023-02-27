@@ -1,0 +1,26 @@
+2) /mnt/scratch/ricques23sp
+3) uid=1049(ricques23sp) gid=1051(ricques23sp) groups=1051(ricques23sp) 
+	I used the command "id"
+4)I can't make a file, I can't cd it, I can ls and I can ls -l. 
+5) I can move it, I also can cp it. to cp a dir, you need to do the command
+cp -r olddir newdir
+6) looking at /proc, it looks like meminfo gives info about memory, and cpuinfo gives info about cpu
+7)
+MemTotal:       73080640 kB
+MemFree:        13694208 kB
+MemAvailable:   19965504 kB
+Buffers:          276608 kB
+Cached:         10400704 kB
+SwapCached:       105280 kB
+Active:          8930368 kB
+Inactive:        2448512 kB
+Active(anon):    2633984 kB
+Inactive(anon):  1728704 kB
+The total memory is 73080640 kB.
+8) There are 255 processors, the processor name is POWER8, and the speed is 3535 mHz
+9) There size of the file is 1Gb, and the number of lines is 110350.
+10) I got 57 cases of the word great.
+11) I got utf-8 for character encoding
+12) Around 176 users
+around 64698 unique tweets
+and around 20258 for unique hashtags.

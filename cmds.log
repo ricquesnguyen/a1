@@ -1,0 +1,177 @@
+1) making a1  
+416  mkdir a1
+  417  cd a1
+  418  vi cmds.log
+  419  ls
+  420  vi a1.txt
+2)home
+  421  echo $HOME
+  422  echo $HOME >> a1.txt
+  423  vi a1.txt
+3) uid
+  424  /etc/passwd
+  425  id
+  426  id -u
+  427  id >> a1.txt
+  428  vi a1.txt
+  429  ls
+4) temp
+  430  mkdir temp
+  431  chmod 666 temp
+  432  cd temp
+  433  ls -l
+  434  ls -l temp
+  435  > ../a1/temp/temp.txt
+  436  vi a1.txt
+  437  ls temp
+  438  vi a1.txt
+5) temp2,3
+  439  mkdir temp2
+  440  mkdir temp3
+  441  mv temp2 temp3
+  442  ls
+  443  ls temp3
+  444  cp -r temp3 temp4
+  445  ls
+  446  vi a1.txt
+  447  ls proc
+  448  cd
+  449  ls
+  450  ls Desktop
+6) meminfo cpuinfo
+  451  cd /proc
+  452  cd
+  453  cd cs131
+  454  cd a1
+  455  ls /proc
+  456  vi a1.txt
+  457  head meminfo
+  458  head /proc/meminfo
+  459  head /proc/meminfo >> a1.txt
+  460  vi a1.txt
+7) head for mem
+  461  head /proc/cpuinfo
+  462  tail /proc/cpuinfo
+  463  cat /proc/cpuinfo
+  464  clear
+8) head for cpu
+  465  vi a1.txt
+  466  cat /proc/cpuinfo
+  467  clear
+  468  vi a1.txt
+9) trying to copy hashtags
+  469  cp /home/test/A1/downloaded_hashtags_extend.csv /cs131/a1
+  470  cp /cs131/a1/hasgtag.csv /home/test/A1/downloaded_hashtags_extend.csv
+  471  cp /cs131/a1 /home/test/A1/downloaded_hashtags_extend.csv
+  472  ls
+  473  pwd
+  474  cp ricques23sp/cs131/a1 /home/test/A1/downloaded_hashtags_extend.csv
+  475  cp /mnt/scratch/ricques23sp/cs131/a1 /home/test/A1/downloaded_hashtags_extend.csv
+  476  cp -r /mnt/scratch/ricques23sp/cs131/a1 /home/test/A1/downloaded_hashtags_extend.csv
+  477  clear
+  478  cp /home/test/A1/downloaded_hashtags_extend.csv hastags.csv
+  479  ls
+  480  ls -s hashtags.csv
+  481  ls -s hastags.csv
+  482  ls -s --block-size=G hastags.csv
+  483  wc -l hastags.csv
+  484  vi a1.txt
+10) great looking
+  485  grep --ignore-case great hastags.csv | wc -l
+  486  vi a1.txt
+11) file
+  487  file -bi hastags.csv
+  488  vi a1.txt
+12) iconv
+  489  icon -f
+  490  iconv -f utf-8 -t ascii hastags.csv > hashtags.csv
+  491  file hastags.csv
+  492  iconv -fc utf-8 -t ascii hastags.csv > hashtags.csv
+  493  ls
+  494  iconv -fc utf-8 -t ascii /ricques23sp/cs131/a1/hastags.csv > hashtags.csv
+  495  iconv -c -f UTF-8 -t US-ASCII  hastags.csv > hashtags.csv
+  496  head hastags.csv
+  497  awk '{print $1}' hastags.csv
+  498  clear
+  499  ls
+  500  cd cs131
+  501  cd
+  502  cd cs131
+  503  ls
+  504  cd ws2
+  505  ls
+  506  vi cmds.log
+  507  cd
+  508  cd cs131
+  509  cd ws3
+  510  ls
+  511  vi ws3answers.txt
+  512  cd
+  513  cd cs131
+  514  cd a1
+  515  ls
+13) counting
+  516  cut f1 hastags.csv
+  517  cut --help
+  518  cut -f1 hastags.csv
+  519  clear
+  520  cut -f1 hastags.csv
+  521  cut -d',' -f1<hastags.csv | cut -f1
+  522  vi hastags.csv
+  523  clear
+  524  cut -d -f1 hastags.csv
+  525  cut -d, -f1 hastags.csv
+  526  clear
+  527  cut -d',' -f1 hastags.csv
+  528  clear
+  529  vi hastags.csv
+  530  cut -d',' -f1  hastags.csv
+  531  clear
+  532  cut -d',' -f1 < hastags.csv
+  533  clear
+  534  cut -f1 < hastags.csv
+  535  cut -d, -f1 < hastags.csv
+  536  cut -d"," -f1 < hastags.csv
+  537  vi hastags.csv
+  538  cut -f 1-9 hastags.csv
+  539  clear
+  540  cut hastags.csv -d ',' -f 1
+  541  clear
+  542  cut -c 1-9 hastags.csv
+  543  cd
+  544  cd cs131
+  545  cd ws3
+  546  vi ws3answers.txt
+  547  cd
+  548  cd cs131
+  549  cd a1
+  550  cut -c 1-9 hastags.csv | sort -g | uniq -c 
+  551  vi hastags.csv
+  552  clear
+  553  cut -f1 hastags.csv | sort -g | uniq -c 
+  554  clear
+  555  cut -f1 hastags.csv | sort -g | uniq -c 
+  556  clear
+  557  cut -c 1-9 hastags.csv | sort -g | uniq -c 
+  558  cut -c 1-9 hastags.csv | sort -g | uniq -c | wc -l
+  559  vi a1.txt
+  560  vi hastags.csv
+  561  cut -f2 -c 16-34 hastags.csv | sort -g | uniq -c | wc -l
+  562  cut -f2 16-34 hastags.csv | sort -g | uniq -c | wc -l
+  563  cut -f2 hastags.csv | sort -g | uniq -c | wc -l
+  564  cut -f2 hastags.csv | sort -g | uniq -c
+  565  clear
+  566  cut -d ',' -f 4 hastags.csv
+  567  cut -d ',' -f 4 hastags.csv | sort -g | uniq -c | wc -l
+  568  vi hastags.csv
+  569  vi a1.txt
+  570  cut -d ',' -f 4 hastags.csv | sort -g | uniq -c
+  571  clear
+  572  cut -d ',' -f 4 hastags.csv | sort -n | uniq -c
+  573  cut -d ',' -f 4 hastags.csv | sort -n | uniq -c | wc -l
+  574  clear
+  575  vi a1.txt
+  576  vi hastags.csv
+  577  cut -d ',' -f 2 hastags.csv | sort -n | uniq -c | wc -l
+  578  vi a1.txt
+  579  history > cmds.log
